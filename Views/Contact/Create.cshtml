@@ -3,10 +3,10 @@
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="border p-4 rounded shadow-sm"> <!-- Border ve kutu ekledik -->
+            <div class="border p-4 rounded shadow-sm"> 
                 <h2 class="text-center mb-4">Bizimle İletişime Geçin</h2>
                 <form asp-action="Create" method="post">
-                    <div class="form-group mb-3"> <!-- Mesafe eklemek için mb-3 (margin-bottom) -->
+                    <div class="form-group mb-3">
                         <label asp-for="FullName">İsim ve Soyisim</label>
                         <input asp-for="FullName" class="form-control" placeholder="İsim ve Soyisim" />
                         <span asp-validation-for="FullName" class="text-danger"></span>
