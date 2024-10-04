@@ -1,20 +1,21 @@
 @model List<ContactFormModel>
-<h2>Forms</h2>
+    
+<h2>Gönderilen Formlar</h2>
 
 @if (Model == null || !Model.Any())
 {
-    <p>No forms available for this category.</p>
+    <p>Bu departmanda mesaj mevcut değil</p>
 }
 else
 {
     <table class="table">
         <thead>
             <tr>
-                <th>Full Name</th>
-                <th>Phone</th>
+                <th>İsim ve Soyisim</th>
+                <th>Telefon Numarası</th>
                 <th>Email</th>
-                <th>Department</th>
-                <th>Message</th>
+                <th>Departman</th>
+                <th>Mesaj</th>
             </tr>
         </thead>
         <tbody>
